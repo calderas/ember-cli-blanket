@@ -8,7 +8,8 @@ function sendCoverage() {
 			url:'/write-blanket-coverage',
 			datatype: 'json',
 			contentType:'application/json; charset=utf-8',
-			data: data
+			data: data,
+			async: false
 		  });
 	} catch(err) {
 		console.error('JSON stringify error:', err);
